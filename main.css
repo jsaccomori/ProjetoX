@@ -1,0 +1,228 @@
+.login-page .login-img{
+    width: calc(50% - 25px);
+}
+
+.login-page .login-img img{
+    width: 100%;
+    height: 100vh;
+}
+
+.login-page .login-cadastro .login-cont .titulo{
+    color: #009045;
+}
+
+.login-page .login-cadastro .login-cont {
+    padding: 0 18vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.login-page .login-cadastro .login {
+    width: calc(50% - 25px);
+}
+  
+.login-page .login-cadastro .login label {
+    font-size: 14px;
+    color: #3e3e3e;
+    margin: 0;
+}
+  
+.login-page .login-cadastro .login .form-login {
+    height: 45px;
+    border: 1px solid #c1c1c1;
+}
+  
+.login-page .login-cadastro .login input {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-radius: 0.25rem;
+}
+  
+.login-page .login-cadastro .login input:focus{
+    border: 1px solid #009045;
+}
+
+.login-page .login-cadastro .login input input-placeholder {
+    color: #009045;
+    font-size: 1em;
+    font-weight: 300;
+}
+  
+.login-page .login-cadastro .login input:-webkit-autofill,
+.login-page .login-cadastro .login input:-webkit-autofill:hover,
+.login-page .login-cadastro .login input:-webkit-autofill:focus {
+    color: #009045;
+    -webkit-text-fill-color: #009045;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+    -webkit-transition: #ffffff 5000s ease-in-out 0s;
+    transition: #ffffff 5000s ease-in-out 0s;
+}
+
+.login-page .login-cadastro .login #senha {
+    height: 45px;
+}
+  
+.login-page .login-cadastro .login .styled-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+  
+.login-page .login-cadastro .login .styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: unset;
+}
+  
+.login-page .login-cadastro .login .styled-checkbox + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    border: 1px solid #009045;
+    border-radius: 0.25rem;
+}
+  
+.login-page .login-cadastro .login .styled-checkbox:hover + label:before {
+    background: #009045;
+}
+  
+.login-page .login-cadastro .login .styled-checkbox:checked + label:before {
+    background: #009045;
+}
+  
+.login-page .login-cadastro .login .styled-checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    background: #009045;
+    width: 2px;
+    height: 2px;
+    -webkit-box-shadow: 2px 0 0 #ffffff, 4px 0 0 #ffffff, 4px -2px 0 #ffffff, 4px -4px 0 #ffffff, 4px -6px 0 #ffffff, 4px -8px 0 #ffffff;
+    box-shadow: 2px 0 0 #ffffff, 4px 0 0 #ffffff, 4px -2px 0 #ffffff, 4px -4px 0 #ffffff, 4px -6px 0 #ffffff, 4px -8px 0 #ffffff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.login-page .login-cadastro .login .recuperar{
+    color: #009045;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login-page .login-cadastro .login .recuperar:hover{
+    color: #004420;
+} 
+
+.login-page .login-cadastro .login .criar-conta{
+    font-size: 14px;
+}
+
+.login-page .login-cadastro .login .criar-conta .criar{
+    color: #009045;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login-page .login-cadastro .login .criar-conta .criar:hover{
+    color: #004420;
+} 
+
+.login-page .login-cadastro .login .btn-green {
+    background-color: #009045;
+    color: #ffffff;
+    height: 47px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+  
+.login-page .login-cadastro .login .btn-green:focus {
+    outline: none;
+    box-shadow: none;
+}
+  
+.login-page .login-cadastro .login .btn-green:hover {
+    background-color: #004420;
+}
+  
+.login-page .login-cadastro .login .btn-white {
+    background-color: #ffffff;
+    border: 1px solid #c1c1c1;
+    color: #3e3e3e;
+}
+  
+.login-page .login-cadastro .login .btn-white:hover {
+    background-color: #b4b4b4;
+    transition: 2s;
+}
+  
+.login-page .login-cadastro .cadastro {
+    width: 49%;
+}
+  
+@media (max-width: 1200px) {
+    .login-page .login-cadastro .login-cont {
+      padding: 0 5vh;
+    }
+}
+  
+@media (max-width: 979px) {
+    .login-page .login-cadastro .login {
+      width: 100%;
+      border-bottom: 1px solid #c1c1c1;
+      border-right: none;
+    }
+  
+    .login-page .login-cadastro .cadastro {
+      width: 100%;
+    }
+  
+}
+  
+@media (max-width: 480px) {
+    .login-page .login-cadastro .card-body {
+      padding: 0;
+    }
+  
+    .login-page .login-cadastro .login-cont {
+      padding: 0;
+    }
+  
+    .login-page .login-cadastro .login label {
+      font-size: 12px;
+    }
+  
+    .login-page .login-cadastro .login .btn-green {
+      font-size: 14px;
+    }
+}
+  
+.error{
+    text-align: end;
+    width: 100%;
+}
+
+.error .alert{
+    padding: 0;
+    color: red;
+    font-size: 14px;
+}
+
+.login-page .modal-border-token {
+    height: 1px;
+    width: 50%;
+    background-color: #616161;
+}
+  
+@media (max-width: 375px) {
+    .login-page .modal-border-token {
+      width: 30%;
+    }
+}
