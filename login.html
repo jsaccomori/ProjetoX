@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Projeto desenvolvedor Front-End</title>
+    <meta name="description" content="Projeto desenvolvedor Front-End">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Projeto desenvolvedor Front-End">
+    <meta property="og:site_name" content="Projeto desenvolvedor Front-End">
+    <meta property="og:description" content="Projeto desenvolvedor Front-End">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+
+    <script defer type="text/javascript" src="script.js"></script>
+</head>
+
+<body class="fix-header">
+    <section class="login-page bg-white">
+        <div class="content d-flex flex-wrap login-cadastro">
+           <div class="login-img">
+                <picture>
+                    <img src="login.png" class="img">
+                </picture>
+            </div>
+
+            <div class="login">
+                <form method="POST" id="formLogin" class="login-cont">
+                    <div class="card-title">
+                        <img src="logo.png">
+
+                        <h1 class="titulo py-3">
+                            Olá!
+                        </h1>
+
+                        <h5 class="text-muted">
+                            Faça o login abaixo.
+                        </h5>
+                    </div>
+
+                    <div class="erros"></div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input id="email" type="email" class="form-control form-login rounded" name="email" value=""
+                        placeholder="maria@gmail.com" autofocus>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="w-100">
+                            Senha
+                        </label>
+
+                        <input id="senha" type="password" class="form-control" name="senha" 
+                        placeholder="******" >
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="form-group">
+                            <input class="styled-checkbox" id="styled-checkbox" type="checkbox" name="remember">
+                            <label for="styled-checkbox">
+                                Manter-me logado
+                            </label>
+                        </div>
+
+                        <a class="recuperar" href="recuperar-senha">
+                            Esqueci minha senha
+                        </a>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-sucess btn-green w-100">
+                            Logar
+                        </button>
+                    </div>
+
+                    <div class="text-center criar-conta">
+                        Ainda não possui uma conta?
+                        <a class="criar" href="criar-conta">
+                            Criar uma aqui!
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
